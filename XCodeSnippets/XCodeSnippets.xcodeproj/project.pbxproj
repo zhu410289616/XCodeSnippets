@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4861798253C3BBBE85FB8FA4 /* libPods-CodeSnippets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0C74E1043D451F211D2698 /* libPods-CodeSnippets.a */; };
+		830196352010D41C00A295BE /* CSSnippetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830196342010D41C00A295BE /* CSSnippetsView.m */; };
+		830196382010D85C00A295BE /* CSSnippetsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 830196372010D85C00A295BE /* CSSnippetsTableCell.m */; };
+		83543A5C2011A9510022D4AE /* CSSnippetDetailWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 83543A5A2011A9510022D4AE /* CSSnippetDetailWindow.m */; };
+		83543A5D2011A9510022D4AE /* CSSnippetDetailWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83543A5B2011A9510022D4AE /* CSSnippetDetailWindow.xib */; };
+		83543A602011B2CC0022D4AE /* ic_snippet.png in Resources */ = {isa = PBXBuildFile; fileRef = 83543A5F2011B2CC0022D4AE /* ic_snippet.png */; };
+		83543A642011D26E0022D4AE /* CSSnippetsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 83543A622011D26E0022D4AE /* CSSnippetsWindow.m */; };
+		83543A652011D26E0022D4AE /* CSSnippetsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83543A632011D26E0022D4AE /* CSSnippetsWindow.xib */; };
+		83543A752011FE820022D4AE /* CodeSnippet.template in Resources */ = {isa = PBXBuildFile; fileRef = 83543A742011FE810022D4AE /* CodeSnippet.template */; };
+		8379A0372010A1A7003A4C93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379A0362010A1A7003A4C93 /* AppDelegate.m */; };
+		8379A0392010A1A7003A4C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8379A0382010A1A7003A4C93 /* Assets.xcassets */; };
+		8379A03C2010A1A7003A4C93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8379A03A2010A1A7003A4C93 /* MainMenu.xib */; };
+		8379A03F2010A1A7003A4C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379A03E2010A1A7003A4C93 /* main.m */; };
+		8379A04D2010A223003A4C93 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8379A04C2010A223003A4C93 /* Cocoa.framework */; };
+		8379A0512010A223003A4C93 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379A0502010A223003A4C93 /* SourceEditorExtension.m */; };
+		8379A0542010A223003A4C93 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379A0532010A223003A4C93 /* SourceEditorCommand.m */; };
+		8379A0592010A223003A4C93 /* CodeSnippets.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8379A04A2010A223003A4C93 /* CodeSnippets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8379A0662010A7C3003A4C93 /* CSSnippetsTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379A0652010A7C3003A4C93 /* CSSnippetsTableAdapter.m */; };
+		8379A0692010A7F4003A4C93 /* CSSnippetsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379A0682010A7F4003A4C93 /* CSSnippetsTableView.m */; };
+		83B7CDDB201460DD00155D7F /* CSSnippetsAboutWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CDD9201460DD00155D7F /* CSSnippetsAboutWindow.m */; };
+		83B7CDDC201460DD00155D7F /* CSSnippetsAboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B7CDDA201460DD00155D7F /* CSSnippetsAboutWindow.xib */; };
+		83C42DDE2015E5600094A917 /* CSNewCodeSnippetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C42DDD2015E5600094A917 /* CSNewCodeSnippetHandler.m */; };
+		83C42DE12015E5B10094A917 /* CSEditCodeSnippetsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C42DE02015E5B10094A917 /* CSEditCodeSnippetsHandler.m */; };
+		83C42DE42015E5CD0094A917 /* CSInsertCodeSnippetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C42DE32015E5CD0094A917 /* CSInsertCodeSnippetHandler.m */; };
+		83C9F22A20233A5700E822D6 /* CSViewCodeSnippetsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C9F22920233A5700E822D6 /* CSViewCodeSnippetsHandler.m */; };
+		83FEB21520171A8300C1FB42 /* ic_system.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FEB21320171A8200C1FB42 /* ic_system.png */; };
+		83FEB21620171A8300C1FB42 /* ic_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FEB21420171A8200C1FB42 /* ic_user.png */; };
+		FDEA2E66D152BD0DC0D2B959 /* libPods-XCodeSnippets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2D86DD34A92D444D8EE133 /* libPods-XCodeSnippets.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8379A0572010A223003A4C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8379A02A2010A1A7003A4C93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8379A0492010A223003A4C93;
+			remoteInfo = CodeSnippets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8379A05D2010A223003A4C93 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8379A0592010A223003A4C93 /* CodeSnippets.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		289B28C615965B9C7C119975 /* Pods-XCodeSnippets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCodeSnippets.release.xcconfig"; path = "../Pods/Target Support Files/Pods-XCodeSnippets/Pods-XCodeSnippets.release.xcconfig"; sourceTree = "<group>"; };
+		2E6D2D33ACB6FEC06728F0EA /* Pods-CodeSnippets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippets.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CodeSnippets/Pods-CodeSnippets.debug.xcconfig"; sourceTree = "<group>"; };
+		6E0C74E1043D451F211D2698 /* libPods-CodeSnippets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeSnippets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830196332010D41C00A295BE /* CSSnippetsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSnippetsView.h; sourceTree = "<group>"; };
+		830196342010D41C00A295BE /* CSSnippetsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSnippetsView.m; sourceTree = "<group>"; };
+		830196362010D85C00A295BE /* CSSnippetsTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSnippetsTableCell.h; sourceTree = "<group>"; };
+		830196372010D85C00A295BE /* CSSnippetsTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSnippetsTableCell.m; sourceTree = "<group>"; };
+		83543A592011A9510022D4AE /* CSSnippetDetailWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSnippetDetailWindow.h; sourceTree = "<group>"; };
+		83543A5A2011A9510022D4AE /* CSSnippetDetailWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSnippetDetailWindow.m; sourceTree = "<group>"; };
+		83543A5B2011A9510022D4AE /* CSSnippetDetailWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSSnippetDetailWindow.xib; sourceTree = "<group>"; };
+		83543A5F2011B2CC0022D4AE /* ic_snippet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_snippet.png; sourceTree = "<group>"; };
+		83543A612011D26E0022D4AE /* CSSnippetsWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSnippetsWindow.h; sourceTree = "<group>"; };
+		83543A622011D26E0022D4AE /* CSSnippetsWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSnippetsWindow.m; sourceTree = "<group>"; };
+		83543A632011D26E0022D4AE /* CSSnippetsWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSSnippetsWindow.xib; sourceTree = "<group>"; };
+		83543A742011FE810022D4AE /* CodeSnippet.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CodeSnippet.template; sourceTree = "<group>"; };
+		8379A0322010A1A7003A4C93 /* XCodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8379A0352010A1A7003A4C93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8379A0362010A1A7003A4C93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8379A0382010A1A7003A4C93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8379A03B2010A1A7003A4C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8379A03D2010A1A7003A4C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8379A03E2010A1A7003A4C93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8379A0402010A1A7003A4C93 /* XCodeSnippets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCodeSnippets.entitlements; sourceTree = "<group>"; };
+		8379A04A2010A223003A4C93 /* CodeSnippets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CodeSnippets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8379A04C2010A223003A4C93 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8379A04F2010A223003A4C93 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		8379A0502010A223003A4C93 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		8379A0522010A223003A4C93 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		8379A0532010A223003A4C93 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		8379A0552010A223003A4C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8379A0562010A223003A4C93 /* CodeSnippets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeSnippets.entitlements; sourceTree = "<group>"; };
+		8379A0642010A7C3003A4C93 /* CSSnippetsTableAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSnippetsTableAdapter.h; sourceTree = "<group>"; };
+		8379A0652010A7C3003A4C93 /* CSSnippetsTableAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSnippetsTableAdapter.m; sourceTree = "<group>"; };
+		8379A0672010A7F4003A4C93 /* CSSnippetsTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSnippetsTableView.h; sourceTree = "<group>"; };
+		8379A0682010A7F4003A4C93 /* CSSnippetsTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSnippetsTableView.m; sourceTree = "<group>"; };
+		83B7CDD8201460DD00155D7F /* CSSnippetsAboutWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSnippetsAboutWindow.h; sourceTree = "<group>"; };
+		83B7CDD9201460DD00155D7F /* CSSnippetsAboutWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSnippetsAboutWindow.m; sourceTree = "<group>"; };
+		83B7CDDA201460DD00155D7F /* CSSnippetsAboutWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSSnippetsAboutWindow.xib; sourceTree = "<group>"; };
+		83C42DDB2015E4C20094A917 /* CSCommandHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCommandHandler.h; sourceTree = "<group>"; };
+		83C42DDC2015E5600094A917 /* CSNewCodeSnippetHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSNewCodeSnippetHandler.h; sourceTree = "<group>"; };
+		83C42DDD2015E5600094A917 /* CSNewCodeSnippetHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSNewCodeSnippetHandler.m; sourceTree = "<group>"; };
+		83C42DDF2015E5B10094A917 /* CSEditCodeSnippetsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSEditCodeSnippetsHandler.h; sourceTree = "<group>"; };
+		83C42DE02015E5B10094A917 /* CSEditCodeSnippetsHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSEditCodeSnippetsHandler.m; sourceTree = "<group>"; };
+		83C42DE22015E5CD0094A917 /* CSInsertCodeSnippetHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSInsertCodeSnippetHandler.h; sourceTree = "<group>"; };
+		83C42DE32015E5CD0094A917 /* CSInsertCodeSnippetHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSInsertCodeSnippetHandler.m; sourceTree = "<group>"; };
+		83C9F22820233A5700E822D6 /* CSViewCodeSnippetsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSViewCodeSnippetsHandler.h; sourceTree = "<group>"; };
+		83C9F22920233A5700E822D6 /* CSViewCodeSnippetsHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSViewCodeSnippetsHandler.m; sourceTree = "<group>"; };
+		83FEB21320171A8200C1FB42 /* ic_system.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_system.png; sourceTree = "<group>"; };
+		83FEB21420171A8200C1FB42 /* ic_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user.png; sourceTree = "<group>"; };
+		CA2D86DD34A92D444D8EE133 /* libPods-XCodeSnippets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCodeSnippets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D599A70B0A195FBDAD6595AC /* Pods-XCodeSnippets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCodeSnippets.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-XCodeSnippets/Pods-XCodeSnippets.debug.xcconfig"; sourceTree = "<group>"; };
+		E976C86C792593A9A227752E /* Pods-CodeSnippets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippets.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CodeSnippets/Pods-CodeSnippets.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8379A02F2010A1A7003A4C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEA2E66D152BD0DC0D2B959 /* libPods-XCodeSnippets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8379A0472010A223003A4C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8379A04D2010A223003A4C93 /* Cocoa.framework in Frameworks */,
+				4861798253C3BBBE85FB8FA4 /* libPods-CodeSnippets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		801F732AEE149EFF8BED94B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D2D33ACB6FEC06728F0EA /* Pods-CodeSnippets.debug.xcconfig */,
+				E976C86C792593A9A227752E /* Pods-CodeSnippets.release.xcconfig */,
+				D599A70B0A195FBDAD6595AC /* Pods-XCodeSnippets.debug.xcconfig */,
+				289B28C615965B9C7C119975 /* Pods-XCodeSnippets.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8301963C2010E94700A295BE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				83543A592011A9510022D4AE /* CSSnippetDetailWindow.h */,
+				83543A5A2011A9510022D4AE /* CSSnippetDetailWindow.m */,
+				83543A5B2011A9510022D4AE /* CSSnippetDetailWindow.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		83543A5E2011B2CC0022D4AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83FEB21320171A8200C1FB42 /* ic_system.png */,
+				83FEB21420171A8200C1FB42 /* ic_user.png */,
+				83543A742011FE810022D4AE /* CodeSnippet.template */,
+				83543A5F2011B2CC0022D4AE /* ic_snippet.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8379A0292010A1A7003A4C93 = {
+			isa = PBXGroup;
+			children = (
+				8379A0342010A1A7003A4C93 /* XCodeSnippets */,
+				8379A04E2010A223003A4C93 /* CodeSnippets */,
+				8379A04B2010A223003A4C93 /* Frameworks */,
+				8379A0332010A1A7003A4C93 /* Products */,
+				801F732AEE149EFF8BED94B2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8379A0332010A1A7003A4C93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8379A0322010A1A7003A4C93 /* XCodeSnippets.app */,
+				8379A04A2010A223003A4C93 /* CodeSnippets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8379A0342010A1A7003A4C93 /* XCodeSnippets */ = {
+			isa = PBXGroup;
+			children = (
+				83543A5E2011B2CC0022D4AE /* Resources */,
+				8379A05E2010A739003A4C93 /* Classes */,
+				8379A0352010A1A7003A4C93 /* AppDelegate.h */,
+				8379A0362010A1A7003A4C93 /* AppDelegate.m */,
+				8379A0382010A1A7003A4C93 /* Assets.xcassets */,
+				8379A03A2010A1A7003A4C93 /* MainMenu.xib */,
+				8379A03D2010A1A7003A4C93 /* Info.plist */,
+				8379A03E2010A1A7003A4C93 /* main.m */,
+				8379A0402010A1A7003A4C93 /* XCodeSnippets.entitlements */,
+			);
+			path = XCodeSnippets;
+			sourceTree = "<group>";
+		};
+		8379A04B2010A223003A4C93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8379A04C2010A223003A4C93 /* Cocoa.framework */,
+				6E0C74E1043D451F211D2698 /* libPods-CodeSnippets.a */,
+				CA2D86DD34A92D444D8EE133 /* libPods-XCodeSnippets.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8379A04E2010A223003A4C93 /* CodeSnippets */ = {
+			isa = PBXGroup;
+			children = (
+				83C42DDA2015E4420094A917 /* Classes */,
+				8379A04F2010A223003A4C93 /* SourceEditorExtension.h */,
+				8379A0502010A223003A4C93 /* SourceEditorExtension.m */,
+				8379A0522010A223003A4C93 /* SourceEditorCommand.h */,
+				8379A0532010A223003A4C93 /* SourceEditorCommand.m */,
+				8379A0552010A223003A4C93 /* Info.plist */,
+				8379A0562010A223003A4C93 /* CodeSnippets.entitlements */,
+			);
+			path = CodeSnippets;
+			sourceTree = "<group>";
+		};
+		8379A05E2010A739003A4C93 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83B7CDD42014608B00155D7F /* About */,
+				8301963C2010E94700A295BE /* Detail */,
+				8379A0602010A758003A4C93 /* Snippets */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8379A0602010A758003A4C93 /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+				8379A0642010A7C3003A4C93 /* CSSnippetsTableAdapter.h */,
+				8379A0652010A7C3003A4C93 /* CSSnippetsTableAdapter.m */,
+				8379A0672010A7F4003A4C93 /* CSSnippetsTableView.h */,
+				8379A0682010A7F4003A4C93 /* CSSnippetsTableView.m */,
+				830196332010D41C00A295BE /* CSSnippetsView.h */,
+				830196342010D41C00A295BE /* CSSnippetsView.m */,
+				830196362010D85C00A295BE /* CSSnippetsTableCell.h */,
+				830196372010D85C00A295BE /* CSSnippetsTableCell.m */,
+				83543A612011D26E0022D4AE /* CSSnippetsWindow.h */,
+				83543A622011D26E0022D4AE /* CSSnippetsWindow.m */,
+				83543A632011D26E0022D4AE /* CSSnippetsWindow.xib */,
+			);
+			path = Snippets;
+			sourceTree = "<group>";
+		};
+		83B7CDD42014608B00155D7F /* About */ = {
+			isa = PBXGroup;
+			children = (
+				83B7CDD8201460DD00155D7F /* CSSnippetsAboutWindow.h */,
+				83B7CDD9201460DD00155D7F /* CSSnippetsAboutWindow.m */,
+				83B7CDDA201460DD00155D7F /* CSSnippetsAboutWindow.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		83C42DDA2015E4420094A917 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83C42DDB2015E4C20094A917 /* CSCommandHandler.h */,
+				83C42DDC2015E5600094A917 /* CSNewCodeSnippetHandler.h */,
+				83C42DDD2015E5600094A917 /* CSNewCodeSnippetHandler.m */,
+				83C42DDF2015E5B10094A917 /* CSEditCodeSnippetsHandler.h */,
+				83C42DE02015E5B10094A917 /* CSEditCodeSnippetsHandler.m */,
+				83C42DE22015E5CD0094A917 /* CSInsertCodeSnippetHandler.h */,
+				83C42DE32015E5CD0094A917 /* CSInsertCodeSnippetHandler.m */,
+				83C9F22820233A5700E822D6 /* CSViewCodeSnippetsHandler.h */,
+				83C9F22920233A5700E822D6 /* CSViewCodeSnippetsHandler.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8379A0312010A1A7003A4C93 /* XCodeSnippets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8379A0432010A1A7003A4C93 /* Build configuration list for PBXNativeTarget "XCodeSnippets" */;
+			buildPhases = (
+				6DEF7192A95412A4191FDD48 /* [CP] Check Pods Manifest.lock */,
+				8379A02E2010A1A7003A4C93 /* Sources */,
+				8379A02F2010A1A7003A4C93 /* Frameworks */,
+				8379A0302010A1A7003A4C93 /* Resources */,
+				8379A05D2010A223003A4C93 /* Embed App Extensions */,
+				9EBF4902CA91799EED9C6806 /* [CP] Embed Pods Frameworks */,
+				96F25A9A76A982B921A7D7B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8379A0582010A223003A4C93 /* PBXTargetDependency */,
+			);
+			name = XCodeSnippets;
+			productName = XCodeSnippets;
+			productReference = 8379A0322010A1A7003A4C93 /* XCodeSnippets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8379A0492010A223003A4C93 /* CodeSnippets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8379A05A2010A223003A4C93 /* Build configuration list for PBXNativeTarget "CodeSnippets" */;
+			buildPhases = (
+				6AC289D299FF3092C765398D /* [CP] Check Pods Manifest.lock */,
+				8379A0462010A223003A4C93 /* Sources */,
+				8379A0472010A223003A4C93 /* Frameworks */,
+				8379A0482010A223003A4C93 /* Resources */,
+				AC3891095C803AA6466708D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeSnippets;
+			productName = CodeSnippets;
+			productReference = 8379A04A2010A223003A4C93 /* CodeSnippets.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8379A02A2010A1A7003A4C93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zhuruhong;
+				TargetAttributes = {
+					8379A0312010A1A7003A4C93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					8379A0492010A223003A4C93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8379A02D2010A1A7003A4C93 /* Build configuration list for PBXProject "XCodeSnippets" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8379A0292010A1A7003A4C93;
+			productRefGroup = 8379A0332010A1A7003A4C93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8379A0312010A1A7003A4C93 /* XCodeSnippets */,
+				8379A0492010A223003A4C93 /* CodeSnippets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8379A0302010A1A7003A4C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FEB21520171A8300C1FB42 /* ic_system.png in Resources */,
+				83543A652011D26E0022D4AE /* CSSnippetsWindow.xib in Resources */,
+				8379A0392010A1A7003A4C93 /* Assets.xcassets in Resources */,
+				83FEB21620171A8300C1FB42 /* ic_user.png in Resources */,
+				83543A5D2011A9510022D4AE /* CSSnippetDetailWindow.xib in Resources */,
+				8379A03C2010A1A7003A4C93 /* MainMenu.xib in Resources */,
+				83543A752011FE820022D4AE /* CodeSnippet.template in Resources */,
+				83B7CDDC201460DD00155D7F /* CSSnippetsAboutWindow.xib in Resources */,
+				83543A602011B2CC0022D4AE /* ic_snippet.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8379A0482010A223003A4C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AC289D299FF3092C765398D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6DEF7192A95412A4191FDD48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96F25A9A76A982B921A7D7B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-XCodeSnippets/Pods-XCodeSnippets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBF4902CA91799EED9C6806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-XCodeSnippets/Pods-XCodeSnippets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC3891095C803AA6466708D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CodeSnippets/Pods-CodeSnippets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8379A02E2010A1A7003A4C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83543A5C2011A9510022D4AE /* CSSnippetDetailWindow.m in Sources */,
+				83543A642011D26E0022D4AE /* CSSnippetsWindow.m in Sources */,
+				8379A0692010A7F4003A4C93 /* CSSnippetsTableView.m in Sources */,
+				8379A0662010A7C3003A4C93 /* CSSnippetsTableAdapter.m in Sources */,
+				830196382010D85C00A295BE /* CSSnippetsTableCell.m in Sources */,
+				8379A03F2010A1A7003A4C93 /* main.m in Sources */,
+				83B7CDDB201460DD00155D7F /* CSSnippetsAboutWindow.m in Sources */,
+				830196352010D41C00A295BE /* CSSnippetsView.m in Sources */,
+				8379A0372010A1A7003A4C93 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8379A0462010A223003A4C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C42DE42015E5CD0094A917 /* CSInsertCodeSnippetHandler.m in Sources */,
+				8379A0512010A223003A4C93 /* SourceEditorExtension.m in Sources */,
+				83C42DE12015E5B10094A917 /* CSEditCodeSnippetsHandler.m in Sources */,
+				83C42DDE2015E5600094A917 /* CSNewCodeSnippetHandler.m in Sources */,
+				83C9F22A20233A5700E822D6 /* CSViewCodeSnippetsHandler.m in Sources */,
+				8379A0542010A223003A4C93 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8379A0582010A223003A4C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8379A0492010A223003A4C93 /* CodeSnippets */;
+			targetProxy = 8379A0572010A223003A4C93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8379A03A2010A1A7003A4C93 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8379A03B2010A1A7003A4C93 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8379A0412010A1A7003A4C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8379A0422010A1A7003A4C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8379A0442010A1A7003A4C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D599A70B0A195FBDAD6595AC /* Pods-XCodeSnippets.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XCodeSnippets/XCodeSnippets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 764XM498XX;
+				INFOPLIST_FILE = XCodeSnippets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zrh.test.XCodeSnippets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8379A0452010A1A7003A4C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289B28C615965B9C7C119975 /* Pods-XCodeSnippets.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XCodeSnippets/XCodeSnippets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 764XM498XX;
+				INFOPLIST_FILE = XCodeSnippets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zrh.test.XCodeSnippets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8379A05B2010A223003A4C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6D2D33ACB6FEC06728F0EA /* Pods-CodeSnippets.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodeSnippets/CodeSnippets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 764XM498XX;
+				INFOPLIST_FILE = CodeSnippets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zrh.test.XCodeSnippets.CodeSnippets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8379A05C2010A223003A4C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E976C86C792593A9A227752E /* Pods-CodeSnippets.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodeSnippets/CodeSnippets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 764XM498XX;
+				INFOPLIST_FILE = CodeSnippets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zrh.test.XCodeSnippets.CodeSnippets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8379A02D2010A1A7003A4C93 /* Build configuration list for PBXProject "XCodeSnippets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8379A0412010A1A7003A4C93 /* Debug */,
+				8379A0422010A1A7003A4C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8379A0432010A1A7003A4C93 /* Build configuration list for PBXNativeTarget "XCodeSnippets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8379A0442010A1A7003A4C93 /* Debug */,
+				8379A0452010A1A7003A4C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8379A05A2010A223003A4C93 /* Build configuration list for PBXNativeTarget "CodeSnippets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8379A05B2010A223003A4C93 /* Debug */,
+				8379A05C2010A223003A4C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8379A02A2010A1A7003A4C93 /* Project object */;
+}

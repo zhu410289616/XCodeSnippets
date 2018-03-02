@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="XCodeSnippets" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="XCodeSnippets" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="Quit XCodeSnippets" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="2tv-nS-kbC">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Edit" id="zrZ-RS-xj6">
+                        <items>
+                            <menuItem title="New" keyEquivalent="n" id="6DG-Te-rLD">
+                                <connections>
+                                    <action selector="newCodeSnippet:" target="Voe-Tx-rLC" id="mSm-SY-zw0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="RZa-Mh-zj5"/>
+                            <menuItem title="Undo" keyEquivalent="z" id="1EC-we-2HF">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="2wD-bQ-Enj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="egs-6C-5W1">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="jRA-67-Lav"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="mHu-W8-A81"/>
+                            <menuItem title="Cut" keyEquivalent="x" id="6hZ-tX-XZ1">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="Qfx-qR-UDU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="eiS-Xv-ZVh">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="L0P-Mj-XxD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="iKw-jm-839">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="s49-Oc-SRZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste and Match Style" keyEquivalent="V" id="fW1-BD-xn8">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="pasteAsPlainText:" target="-1" id="dW6-z3-i1u"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="nTf-AZ-xzC">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="delete:" target="-1" id="eQt-wP-eoG"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="nzF-t3-WHJ">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="f09-4R-2HX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="XwJ-Yi-Hpz"/>
+                            <menuItem title="Install All" keyEquivalent="i" id="hA4-co-iaz">
+                                <connections>
+                                    <action selector="installAllCodeSnippets:" target="Voe-Tx-rLC" id="g3o-IW-92p"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Uninstall All" keyEquivalent="u" id="g1h-Sq-NPT">
+                                <connections>
+                                    <action selector="uninstallAllCodeSnippets:" target="Voe-Tx-rLC" id="jps-D4-bqz"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
